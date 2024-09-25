@@ -1,0 +1,19 @@
+@use "utils";
+
+:root {
+  --first-color: #fff7e6;
+  --second-color:#722ed1;
+  --third-color: #414581;
+  --fourth-color: #fff566;
+  --fifth-color: #fadb14;
+  font-size: 10px;
+}
+
+html,
+body {
+  width: 100dvw;
+  height: 100dvh;
+  @include utils.flexCenter(flex-start);
+  background: linear-gradient(180deg, rgb(238, 236, 179) 0%, rgb(246, 234, 106) 100%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
